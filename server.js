@@ -3,10 +3,10 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     proxy = require('express-http-proxy');
 
-var api = 'http://cbre-search-dev.cloudapp.net', 
-    cdn = 'https://uatlistingssearchcbreeun.blob.core.windows.net',
-    cms = 'http://54.163.251.114',
-    host = 'http://cbre-int.clients.amido.com';
+var api = process.env.API || 'http://cbre-search-dev.cloudapp.net', 
+    cdn = process.env.CDN || 'https://uatlistingssearchcbreeun.blob.core.windows.net',
+    cms = process.env.CMS || 'http://54.163.251.114',
+    host = process.env.HOST || 'http://cbre-int.clients.amido.com';
 
 app.use('/api/*', proxy(api, {
   forwardPath: function(req, res) {
