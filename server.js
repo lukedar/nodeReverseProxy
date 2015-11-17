@@ -5,7 +5,8 @@ var express = require('express'),
 
 var api = 'http://cbre-search-dev.cloudapp.net', 
     cdn = 'https://uatlistingssearchcbreeun.blob.core.windows.net',
-    cms = 'http://54.163.251.114';
+    cms = 'http://54.163.251.114',
+    host = 'http://cbre-int.clients.amido.com';
 
 app.use('/api/*', proxy(api, {
   forwardPath: function(req, res) {
@@ -21,7 +22,7 @@ app.use('/resources*', proxy(cdn, {
 
 app.use('/*', proxy(cms, {
   forwardPath: function(req, res) {
-    return 'http://cbre-int.clients.amido.com/' + req.originalUrl;
+    return host + req.originalUrl;
   }
 }));
 
