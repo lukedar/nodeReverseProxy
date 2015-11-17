@@ -1,7 +1,3 @@
-## Run Me
-
-
-
 # Variables
 
 Name | Default | Meaning 
@@ -13,7 +9,7 @@ CMS | http://54.163.251.114 | The scheme and IP (or hostname as long as it does'
 HOST | http://cbre-int.clients.amido.com | The hostname that the reverse proxy should forward to drupal for URL generation 
 
 
-How To Run:
+# How To Run
 
 ```
 #!bash
@@ -24,4 +20,5 @@ node server.js
 
 
 # Note
+
 Use of Port numbers other than 80 might result in Drupal serving links to the default port. :|
