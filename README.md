@@ -1,7 +1,14 @@
 ## Run Me
 
+
+```
+#!bash
+
 export PORT=1025 
+
 node server.js
+
+```
 
 
 # Note
