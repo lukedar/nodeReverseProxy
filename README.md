@@ -13,6 +13,7 @@ CMS | http://54.163.251.114 | The scheme and IP (or hostname as long as it does'
 HOST | http://cbre-int.clients.amido.com | The hostname that the reverse proxy should forward to drupal for URL generation 
 
 
+How To Run:
 
 ```
 #!bash
