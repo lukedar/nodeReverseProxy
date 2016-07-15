@@ -1,7 +1,3 @@
-
-# Credit
-	https://github.com/uatec
-
 # Variables
 
 Name | Default | Meaning 
@@ -26,3 +22,7 @@ node server.js
 # Note
 
 Use of Port numbers other than 80 might result in Drupal serving links to the default port. :|
+
+
+# Credit
+	uatec
