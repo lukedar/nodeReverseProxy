@@ -1,0 +1,63 @@
+# Packages #
+############
+*.7z
+*.dmg
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+
+# Logs and databases #
+######################
+*.log
+
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+._*
+*~
+
+# Vim generated files #
+######################
+*.un~
+*.swp
+
+# SASS #
+##########
+.sass-cache
+
+# Ignore Eclipse IDE stuff
+.buildpath
+.project
+.settings/*
+.settings
+.DS_Store
+atlassian-ide-plugin.xml
+
+# Ignore Netbeans IDE stuff
+nbproject/*
+build.xml
+build/*
+nbbuild/*
+dist/*
+nbdist/*
+nbactions.xml
+nb-configuration.xml
+
+# Ignore PHPStore IDE stuff
+.idea
+
+# Ignore Intellij stuff
+*.iws
+*.iml
+
+#ignore node_modules and bower_components
+
+node_modules
